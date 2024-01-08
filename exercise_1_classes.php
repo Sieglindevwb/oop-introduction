@@ -35,6 +35,9 @@ class Beverage
 }
 
 $cola = new Beverage("black", 2.00);
+echo "<h1>exercise one:</h1>";
+echo "</br>";
 $cola->getInfo();
 echo "</br>";
 echo "Temperature: $cola->temperature";
+echo "</br>";

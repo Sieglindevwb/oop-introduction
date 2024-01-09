@@ -28,6 +28,10 @@ class Beverage
         $this->temperature = $temperature;
     }
 
+    public function getTemperature() {
+        return $this->temperature;
+    }
+
     public function getInfo(){
         echo "This beverage is $this->temperature and $this->color.";
     }

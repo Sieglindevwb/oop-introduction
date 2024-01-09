@@ -32,7 +32,7 @@ class Beer extends Beverage {
     }
 
     public function getAlcoholPercentage(){
-        echo "This beverage is $this->name with this alcohol percentage $this->alcoholPercentage % and $this->color.";
+        return $this->alcoholPercentage;
     }
 }
 
@@ -40,7 +40,7 @@ $duvel = new Beer("blond", 3.5, "Duvel", 8.5);
 echo "<h1>exercise two:</h1>";
 echo "This is $duvel->name and it is the temperature is $duvel->temperature";
 echo "<br>";
-$duvel->getAlcoholPercentage();
+echo "The alcohol percentage from Duvel is" . " " . $duvel->getAlcoholPercentage() . "%";
 echo "<br>";
 echo "This is my alcohol percentage $duvel->alcoholPercentage %";
 echo "<br>";
